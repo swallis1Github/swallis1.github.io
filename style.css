@@ -1,0 +1,68 @@
+* {box-sizing: border-box;
+}
+
+header h2, h4 {text-align: center;
+font-family: 'Zhi Mang Xing', cursive; }
+
+/* Element Selectors */
+
+p {
+  color: red;
+    text-align: center;}
+
+article h4 {color: green;}
+
+body {background-color: bisque;}
+
+body {width: 90%;
+    margin: auto;}
+
+
+/* Element + Class Selector */
+
+p.center {
+  text-align: center;
+    color: red;}
+
+
+/* Class Selectors */
+
+.name {background-color: black;
+        color: beige;
+        font-family: monospace;
+    text-align: justify;}  
+  
+
+.center {
+  text-align: center;
+    color: red;}
+
+     
+.rsw {float: right;
+    width: 60%;}
+.lsw {float: left;
+    width: 40%;}  
+
+
+row:after {clear: both;
+    content: "";
+    display: table;}
+    
+.exp {background-color: black;
+        color: blue;
+        font-family: monospace;
+    text-align: justify;}
+
+
+/*
+
+Create an externally-linked CSS file to contain the style and layout rules for your resume.html file. 
+
+Your CSS file should:
+-demonstrate correct syntax and HTML link structure
+-have at least 3 different ways of selecting/targeting elements, using html tags and classes
+-define at least 10 different attributes of your html page
+-demonstrate knowledge of the CSS box model
+-affect the font of the entire document (GOOGLE FONTS)
+
+*/
