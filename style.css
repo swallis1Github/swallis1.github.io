@@ -1,8 +1,14 @@
 * {box-sizing: border-box;
 }
 
-header h2, h4 {text-align: center;
-font-family: 'Zhi Mang Xing', cursive; }
+.box {background-color: lightgray;
+width: 550px;
+border: 15px solid green;
+padding 150px;
+margin:50px;}
+
+html {text-align: left;
+font-family: 'Vollkorn Regular'; }
 
 /* Element Selectors */
 
@@ -14,9 +20,6 @@ article h4 {color: green;}
 
 body {background-color: bisque;}
 
-body {width: 90%;
-    margin: auto;}
-
 
 /* Element + Class Selector */
 
@@ -24,22 +27,40 @@ p.center {
   text-align: center;
     color: red;}
 
+p.left {text-align:left;
+    color: blue;}
+
+p.justify {text-align: justify;}
+
 
 /* Class Selectors */
 
 .name {background-color: black;
         color: beige;
-        font-family: monospace;
-    text-align: justify;}  
+        font-family: Times New Roman ;
+    text-align: center;} 
   
 
 .center {
   text-align: center;
     color: red;}
 
+.left {
+  text-align: left;
+    color: red;}
+
+
+.img {width:auto; 
+    text-align:right; 
+    padding:300px; }
+
      
 .rsw {float: right;
     width: 60%;}
+
+.csw {float: center;
+    width: 60%;}
+
 .lsw {float: left;
     width: 40%;}  
 
@@ -47,6 +68,10 @@ p.center {
 row:after {clear: both;
     content: "";
     display: table;}
+
+col:after {clear:both;
+    content: "";
+    display:table;}
     
 .exp {background-color: black;
         color: blue;
