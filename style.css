@@ -12,6 +12,7 @@ font-family: 'Vollkorn Regular'; }
 
 /* Element Selectors */
 
+
 p {
   color: red;
     font-weight: bold;}
@@ -23,9 +24,6 @@ body {background-color: bisque;}
 
 /* Element + Class Selector */
 
-p.center {
-  text-align: center;
-    color: red;}
 
 p.left {text-align:left;
     color: blue;}
@@ -40,7 +38,7 @@ p.justify {text-align: justify;}
         font-family: Times New Roman ;
     text-align: center;}   
 
-.center {
+.scott {
   font-size: 50px;
     font-weight: bolder;}
 
