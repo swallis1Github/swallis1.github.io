@@ -14,9 +14,9 @@ font-family: 'Vollkorn Regular'; }
 
 p {
   color: red;
-    text-align: center;}
+    font-weight: bold;}
 
-article h4 {color: green;}
+article {color: purple;}
 
 body {background-color: bisque;}
 
@@ -38,12 +38,11 @@ p.justify {text-align: justify;}
 .name {background-color: black;
         color: beige;
         font-family: Times New Roman ;
-    text-align: center;} 
-  
+    text-align: center;}   
 
 .center {
-  text-align: center;
-    color: red;}
+  font-size: 50px;
+    font-weight: bolder;}
 
 .left {
   text-align: left;
@@ -79,15 +78,3 @@ col:after {clear:both;
     text-align: justify;}
 
 
-/*
-
-Create an externally-linked CSS file to contain the style and layout rules for your resume.html file. 
-
-Your CSS file should:
--demonstrate correct syntax and HTML link structure
--have at least 3 different ways of selecting/targeting elements, using html tags and classes
--define at least 10 different attributes of your html page
--demonstrate knowledge of the CSS box model
--affect the font of the entire document (GOOGLE FONTS)
-
-*/
