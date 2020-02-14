@@ -17,11 +17,11 @@
                 
                 <div class="name">                  
                     
-                <h2>SCOTT WALLISH</h2>
+                <h2 id = "Cap">SCOTT WALLISH</h2>
                 <h4>2035 Uniondale Drive</h4>
                 <h4>Stow, Ohio 44224</h4>
-                <h4>(C) (330) 696-5607</h4>                
-                
+                <h4>(C) (330) 696-5607</h4>             
+                                    
                 </div>
                 
                 
@@ -46,16 +46,25 @@
                     I am submitting with this letter my professional background history for your review and consideration. As a Planning Analyst and Systems Coordinator, I have performed various duties that include inventory adjustment and entry, work order placement, process purchase requisitions, data troubleshoot, report development and analysis, help prioritize planning schedules, analyze all inventory and production planning modules, maintain AS-400 ERP master data, make recommendations to management, develop reports for end-users using query tools, a wide variety of functions, filters and programming techniques. I’m a team player, work well under pressure and I’m very detailed – oriented with problem-solving skills.
                     
                 </p>
+                    
+                <br>
                                  
                 </div>         
                                                  
+                <!--
+                <div class = "rsw">
+                    <img src= "Scott1.jpg" alt="Smiley face" height="250" width="200">
+                    <h3 class = "scott">Scott Wallish Image:</h3>
+                </div>
+                --> 
                 
                 <div class = "rsw">
-                    <img src= "ScottW_Photo.JPG" alt="Smiley face" height="250" width="200">
-                    <h3 class = "scott">Scott Wallish Image:</h3>
-                </div>                
-                                    
-                                                                       
+                    <img id= "myImg" src="Scott1.jpg" alt="Smiley face" height="250" width="200">
+                    <button onclick="scottFunction()">Click on my photo to change</button>                    
+                </div>             
+                                  
+                                                
+                                                                                     
             </section>
             
             </header>                     
@@ -71,8 +80,10 @@
             <h4>COLTENE, Cuyahoga Falls, Ohio</h4>
             
             
+            
             <article>
-            <ul class = "box">
+            
+            <ul class = "box1">
                 
             <br><li> Production Control Assistant, Planning Department 2/5/04 – 9/1/05</li>
 			<br><li> Inventory Planning Analyst, Planning Department Promotion 9/2/05 – 7/1/08</li>
@@ -80,16 +91,18 @@
             <br><li> Systems Coordinator, Engineering Department 7/2/08 – 10/1/12 (See SC addendum) - Pg. 3</li>
 			<br><li> Business Application Analyst, IT Department 10/2/2012 – Present (See BAA addendum) - Pg. 4</li>
                          
-            </ul>                
+            </ul>
+            
             </article>
+            
                                      
                      
             <br>
             <p class="left">9/22/03 thru 12/31/03</p>                
-            <h4>Adecco Temp Agency, Streetsboro, Ohio</h4>          
-            
-            <ul>
+            <h4>Adecco Temp Agency, Streetsboro, Ohio</h4> 
                 
+            <ul class = "box2">            
+                            
             <li>Performed various administrative duties utilizing SAP/ERP, Kronos and Excel reports.</li>
                 
             </ul>
@@ -284,7 +297,21 @@
             </ul> 
             </footer>
                 
-        </main>       
+        </main>
+            
+            <!-- JAVASCRIPT AREA -->          
+                                    
+
+            <script>
+                
+            function scottFunction() {
+                document.getElementById("myImg").src = "Scott2.jpg";
+                document.getElementById("Cap").innerHTML = "CAPSTONE";
+                }
+                
+            </script>                  
+                    
+            
         </body>
 </html>
 
