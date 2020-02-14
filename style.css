@@ -1,11 +1,15 @@
 * {box-sizing: border-box;
 }
 
-.box {background-color: lightgray;
+.box1 {background-color: lightgray;
 width: 550px;
 border: 15px solid green;
-padding 150px;
-margin:50px;}
+padding 150px;}
+
+.box2 {background-color: lightgray;
+width: 550px;
+border: 15px solid blue;
+padding 150px;}
 
 html {text-align: left;
 font-family: 'Vollkorn Regular'; }
@@ -62,11 +66,11 @@ p.justify {text-align: justify;}
     width: 40%;}  
 
 
-row:after {clear: both;
+.row:after {clear: both;
     content: "";
     display: table;}
 
-col:after {clear:both;
+.col:after {clear:both;
     content: "";
     display:table;}
     
