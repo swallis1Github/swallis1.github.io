@@ -7,7 +7,13 @@
         
         <title>Scott Wallish Resume</title>
         
-        <link rel="stylesheet" href="style.css">                       
+        <link rel="stylesheet" href="style.css"> 
+        
+        <link href='https://fonts.googleapis.com/css?family=Acme' rel='stylesheet'>
+        
+        <style>
+        body {font-family: 'Acme';font-size: 22px; }              
+        </style>
                                    
     </head>
     
@@ -17,7 +23,7 @@
                 
                 <div class="name">                  
                     
-                <h2 id = "Cap">SCOTT WALLISH</h2>
+                <h2 id = "Cap" class = "blinking">SCOTT WALLISH</h2>
                 <h4>2035 Uniondale Drive</h4>
                 <h4>Stow, Ohio 44224</h4>
                 <h4>(C) (330) 696-5607</h4>             
@@ -33,8 +39,9 @@
                     
                 
                     
-                <p class = "justify" id = "ChgTextColor"> 
+                <p class = "justify" id = "ChgTextColor" onmouseover="blackTxt(this)" onmouseout="purpleTxt(this)"> 
                     
+                                        
                     April 27, 2012
                     <br>
                     <br>Coltene Inc.
@@ -47,24 +54,19 @@
                     <br>
                     I am submitting with this letter my professional background history for your review and consideration. As a Planning Analyst and Systems Coordinator, I have performed various duties that include inventory adjustment and entry, work order placement, process purchase requisitions, data troubleshoot, report development and analysis, help prioritize planning schedules, analyze all inventory and production planning modules, maintain AS-400 ERP master data, make recommendations to management, develop reports for end-users using query tools, a wide variety of functions, filters and programming techniques. I’m a team player, work well under pressure and I’m very detailed – oriented with problem-solving skills.
                     
-                    <button onclick="coverLetter()">Click to change text color</button>
+                    <button onclick="coverLetter()">Click to change text color OR hover over to change text color</button>
                     
                 </p>
                     
                 <br>
                                  
-                </div>         
-                                                 
-                <!--
-                <div class = "rsw">
-                    <img src= "Scott1.jpg" alt="Smiley face" height="250" width="200">
-                    <h3 class = "scott">Scott Wallish Image:</h3>
-                </div>
-                --> 
+                </div>      
+                                              
+                
                 
                 <div class = "rsw">
                     <img id= "myImg" src="Scott1.jpg" alt="Smiley face" height="250" width="200">
-                    <button onclick="scottFunction()">Click on my photo to change</button>                    
+                    <button onclick="scottFunction()">Click on my photo to change AND see header name change</button>                    
                 </div>       
                                
                                             
@@ -309,14 +311,23 @@
                 
             function scottFunction() {
                 document.getElementById("myImg").src = "Scott2.jpg";
-                document.getElementById("Cap").innerHTML = "CAPSTONE";
+                document.getElementById("Cap").innerHTML = "CAPSTONE";                
                 }
                 
-            function coverLetter()  {       
+            function coverLetter() {       
                 document.getElementById("ChgTextColor").style.color = "blue";
                 }
                 
-            </script>                 
+            function blackTxt(x) {
+                x.style.color = "black";                
+                }             
+                
+                
+            function purpleTxt(x) {
+                x.style.color = "purple";
+                }
+                
+            </script>               
                     
             
         </body>
