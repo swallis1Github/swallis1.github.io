@@ -29,21 +29,25 @@
                     
                 <div class="lsw">
                 
-                <h3>BAA Cover Letter:</h3>
+                <h3>BAA COVER LETTER:</h3>
                     
                 
                     
-                <p class = "justify"> 
+                <p class = "justify" id = "ChgTextColor"> 
                     
                     April 27, 2012
-
-                    Coltene Inc.
-                    235 Ascot Parkway 
-                    Cuyahoga Falls, Ohio 44223
-
-                    Bryan Lindsey and Jesko Burkle
-
+                    <br>
+                    <br>Coltene Inc.
+                    <br>235 Ascot Parkway 
+                    <br>Cuyahoga Falls, Ohio 44223
+                    <br>
+                    <br>
+                    Bryan Lindsey and Jesko Burkle,
+                    <br>
+                    <br>
                     I am submitting with this letter my professional background history for your review and consideration. As a Planning Analyst and Systems Coordinator, I have performed various duties that include inventory adjustment and entry, work order placement, process purchase requisitions, data troubleshoot, report development and analysis, help prioritize planning schedules, analyze all inventory and production planning modules, maintain AS-400 ERP master data, make recommendations to management, develop reports for end-users using query tools, a wide variety of functions, filters and programming techniques. I’m a team player, work well under pressure and I’m very detailed – oriented with problem-solving skills.
+                    
+                    <button onclick="coverLetter()">Click to change text color</button>
                     
                 </p>
                     
@@ -61,9 +65,9 @@
                 <div class = "rsw">
                     <img id= "myImg" src="Scott1.jpg" alt="Smiley face" height="250" width="200">
                     <button onclick="scottFunction()">Click on my photo to change</button>                    
-                </div>             
-                                  
-                                                
+                </div>       
+                               
+                                            
                                                                                      
             </section>
             
@@ -93,8 +97,7 @@
                          
             </ul>
             
-            </article>
-            
+            </article>            
                                      
                      
             <br>
@@ -299,7 +302,7 @@
                 
         </main>
             
-            <!-- JAVASCRIPT AREA -->          
+            <!-- JAVASCRIPT SECTION -->          
                                     
 
             <script>
@@ -309,7 +312,11 @@
                 document.getElementById("Cap").innerHTML = "CAPSTONE";
                 }
                 
-            </script>                  
+            function coverLetter()  {       
+                document.getElementById("ChgTextColor").style.color = "blue";
+                }
+                
+            </script>                 
                     
             
         </body>
