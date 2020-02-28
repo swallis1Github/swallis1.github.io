@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+    
+    <!-- Scott Wallish CSS, JavaScipt, API Assignment 3/1/2020 - CAPSTONE class Spring 2020. -->      
+          
+    <head>
+        
+        <!-- DECLARE ENCODING -->
+        
+        <meta charset="UTF-8">
+                
+        <title>Scott Wallish API example from Ghibli API</title>
+        
+                
+        <!-- CALL CSS STYLING -->
+        
+        <link rel="stylesheet" href="style.css"> 
+        
+        <link href='https://fonts.googleapis.com/css?family=Acme' rel='stylesheet'>    
+                
+        <!-- MOVE TO STYLE CSS? -->
+        
+        <style>            
+            body {font-family: 'Acme';font-size: 22px; }              
+        </style>
+                                   
+    </head>
+    
+    <body>
+        
+        <!-- HEADER 2 WILL BE CENTERED ON DISPLAY -->
+        
+        <h2>Scott Wallish example API using Ghibli API</h2>
+        
+        <!-- CONTAINER div CONTAINS VARIABLE id IS ASSIGNED TO THE root -->
+        
+        <div id="root"></div>
+        
+        <!-- JAVASCRIPT STARTS HERE WITH API CALL -->
+        
+        <script>
+            
+            // CONSTANT app CALLS TO THE id = root   
+            
+            const app = document.getElementById('root')
+
+            const logo = document.createElement('img')
+            logo.src = 'logo.png'
+
+            const container = document.createElement('div')
+            container.setAttribute('class', 'container')
+
+            app.appendChild(logo)
+            app.appendChild(container)
+            
+            // VARIABLE request AND ASSIGN THE OBJECT
+            
+            var request = new XMLHttpRequest()
+            
+            // OPENING CONNECTION USING A GET REQUEST
+            
+            request.open('GET', 'https://ghibliapi.herokuapp.com/films', true)        
+                
+                                         
+            request.onload = function() {
+             
+                           
+            // BEGIN ACCESSING JSON DATA                
+                        
+            var data = JSON.parse(this.response)
+            
+            // IF STATEMENT WITH ELSE
+            
+                if (request.status >= 200 && request.status < 400) {
+                    data.forEach(movie => {
+                        
+            // SHOW MOVIE OBJECT IN THE CONSOLE
+                        
+            console.log(movie.title)
+                        
+            // THREE CONSTANTS
+                        
+            const card = document.createElement('div')
+            card.setAttribute('class', 'card')
+
+            const h1 = document.createElement('h1')
+            h1.textContent = movie.title
+
+            const p = document.createElement('p')
+            movie.description = movie.description.substring(0, 300)
+            p.textContent = `${movie.description}...`
+
+            // APPEND THE CARDS TO THE CONTAINER
+            
+            container.appendChild(card)
+            card.appendChild(h1)
+            card.appendChild(p)
+            })
+            } else {
+            const errorMessage = document.createElement('marquee')
+            errorMessage.textContent = `Gah, it's not working!`
+            app.appendChild(errorMessage)
+  }
+}
+            request.send()
+            
+                   
+        </script>
+        
+    </body>
+    
+</html>
