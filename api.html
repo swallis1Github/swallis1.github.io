@@ -44,10 +44,17 @@
             
             const app = document.getElementById('root')
 
+            // DID NOT USE THE img id?, LOGO WILL NOT DISPLAY
+            
             const logo = document.createElement('img')
             logo.src = 'logo.png'
+            
+            // CREATE A CONSTANT container THAT AN ELEMENT div?
 
             const container = document.createElement('div')
+            
+            // THE container HAS TWO ATTRIBUTES class & const container
+            
             container.setAttribute('class', 'container')
 
             app.appendChild(logo)
@@ -69,12 +76,12 @@
                         
             var data = JSON.parse(this.response)
             
-            // IF STATEMENT WITH ELSE
+            // IF STATEMENT WITH ELSE, WHERE LOOKING FOR STATUS RANGE FOR EACH MOVIE AND IF TRUE SEE CONSOLE LOG
             
                 if (request.status >= 200 && request.status < 400) {
                     data.forEach(movie => {
                         
-            // SHOW MOVIE OBJECT IN THE CONSOLE
+            // SHOW MOVIE TITLE OBJECT IN THE CONSOLE
                         
             console.log(movie.title)
                         
