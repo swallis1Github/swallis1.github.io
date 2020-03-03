@@ -38,6 +38,15 @@ p.justify {text-align: justify;}
 
 /* Class Selectors */
 
+/* .bgimg class USED FOR CSS TEMPLATE */
+
+.bgimg {
+  background-image: url('/w3images/forestbridge.jpg');
+  min-height: 50%;
+  background-position: right;
+  background-size: cover;
+}
+
 .name {background-color: black;
         color: beige;
         font-family: Times New Roman ;
